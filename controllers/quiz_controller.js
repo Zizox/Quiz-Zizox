@@ -12,3 +12,8 @@ exports.answer = function(req, res) {
 		res.render('quizes/answer', {respuesta: 'Incorrecto'});
 	}
 };
+
+// GET /autor
+exports.author = function(req, res) {
+	res.render('credits/author', { autor: 'José Iglesias',foto: 'mifoto.jpg',});
+};
